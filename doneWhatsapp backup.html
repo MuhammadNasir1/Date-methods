@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+            .head{
+
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background-color: #800080;
+    color: white;
+    font-size: xxx-large
+    
+}
+.back{
+        color: #800080;
+    font-size: xx-large;
+    }
+   </style>
+</head>
+<body>
+    <h1 class="head">Data Backup</h1>
+    <div class="back">
+    <script>
+        var date= new Date();      
+        hours= date.getHours();
+        min= date.getMinutes();
+        sec=date.getSeconds();
+        msec=date.getMilliseconds();        
+       document.write(+hours+":"+min+":"+sec+msec+" "+"☞☞☞"+" ")
+         if( hours ==23 ){
+        document.write("Your Data Backup is now processing....")
+         }
+        else{
+            document.write("You can access your Data...." )
+        }
+      
+    </script>
+    </div>
+</body>
+</html>

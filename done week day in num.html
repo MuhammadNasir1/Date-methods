@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading{
+        font-family:Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+        border-radius: 30px;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        background-color: #800080;
+        color: white;
+    }
+.time{
+     /* border:1px solid ; */
+    /* text-align: center; */
+    color:#800080;
+     font-size: xx-large;
+}
+.timw{
+    color: #800080;
+    font-size: xx-large;
+    /* text-align: center; */
+}
+</style>
+<body>
+    <h1 class="heading">Showing Days Name,Time,Date</h1>
+    <div class="time">
+    <script>
+        var time= new Date();      
+        hours= time.getHours();
+        min= time.getMinutes();
+        sec=time.getSeconds(); 
+        msec=time.getMilliseconds();
+        date=time.getDate(); 
+        month=time.getMonth();  
+        year= time.getFullYear();
+       document.write("Date:"+date+"/"+month+"/"+year+"<br>"+"Time:"+hours+":"+min+":"+msec+" ")
+       if(hours <12){
+            document.write("Am")
+         }
+        else{
+            document.write("PM")
+        }
+    </script>
+    </div>
+    <div class="timw">
+        <script>
+            var weeks = ["sunday","monday","tuesday","wednesday","thursday","Friday","Saturday",]
+var d = new Date();
+week= weeks[d.getDay()];
+document.write("Day:"+week);
+        </script>
+    </div>
+</body>
+</html>
